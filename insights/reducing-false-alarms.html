@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reducing False Alarms: The Science of Accurate Detection | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .article-hero { padding: 10rem 0 4rem; background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); }
+        .article-hero .container { max-width: 800px; }
+        .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 0; }
+        .article-body h2 { font-size: 1.75rem; margin: 3rem 0 1rem; color: var(--color-purple-300); }
+        .article-body h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .article-body ul, .article-body ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-body li { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-secondary); }
+        .stat-highlight { background: rgba(139, 92, 246, 0.1); border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center; }
+        .stat-highlight .number { font-size: 3rem; font-weight: 700; color: var(--color-purple-300); }
+        .stat-highlight .label { color: var(--color-text-secondary); margin-top: 0.5rem; }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
+        .comparison-card { background: rgba(0,0,0,0.2); border-radius: 12px; padding: 1.5rem; }
+        .comparison-card h4 { margin-bottom: 1rem; }
+        .comparison-card.bad h4 { color: #ef4444; }
+        .comparison-card.good h4 { color: #10b981; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="../platform.html" class="nav-link">Platform</a></li>
+                <li><a href="../insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-hero">
+            <div class="container">
+                <span class="section-label">Best Practices</span>
+                <h1 class="page-title">Reducing False Alarms: The Science of Accurate Detection</h1>
+                <div class="article-meta" style="margin-top: 1.5rem; color: var(--color-text-secondary);">
+                    <span>DALEXOR Engineering</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>8 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="article-body">
+                    <p class="lead" style="font-size: 1.25rem; color: var(--color-text-primary);">
+                        False alarms are the silent killer of security systems. When 95% of alerts are false positives, operators stop paying attention—and miss the real threats. Here's how AI-powered systems achieve dramatically better accuracy.
+                    </p>
+
+                    <div class="stat-highlight">
+                        <div class="number">94%</div>
+                        <div class="label">of traditional motion-based security alerts are false alarms</div>
+                    </div>
+
+                    <h2>The False Alarm Problem</h2>
+                    <p>
+                        Traditional security systems trigger on any motion: a cat walking by, tree branches swaying, shadows from passing cars, even insects on the camera lens. This creates "alert fatigue"—operators become desensitized and start ignoring alerts entirely.
+                    </p>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-card bad">
+                            <h4>❌ Motion Detection</h4>
+                            <ul style="margin: 0; padding-left: 1.25rem;">
+                                <li>Triggers on ANY movement</li>
+                                <li>Can't distinguish people from animals</li>
+                                <li>Weather causes constant alerts</li>
+                                <li>No context awareness</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card good">
+                            <h4>✅ AI Detection</h4>
+                            <ul style="margin: 0; padding-left: 1.25rem;">
+                                <li>Detects humans specifically</li>
+                                <li>Ignores animals, vehicles, shadows</li>
+                                <li>Weather-resistant algorithms</li>
+                                <li>Understands context and behavior</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Multi-Layer Detection Pipeline</h2>
+                    <p>
+                        DALEXOR uses a multi-stage approach where each layer filters out more false positives:
+                    </p>
+
+                    <h3>Layer 1: Person Detection (YOLO)</h3>
+                    <p>
+                        The first filter uses a neural network trained specifically to detect humans. It ignores animals, vehicles, and environmental motion. This alone eliminates ~80% of false alarms.
+                    </p>
+
+                    <h3>Layer 2: Tracking Confirmation</h3>
+                    <p>
+                        A detection must persist across multiple frames to be confirmed. This eliminates momentary glitches, reflections, and single-frame artifacts.
+                    </p>
+
+                    <h3>Layer 3: Face Recognition</h3>
+                    <p>
+                        Known persons (family, employees) are identified and treated differently than unknown persons. Your spouse coming home doesn't need an alert.
+                    </p>
+
+                    <h3>Layer 4: Behavioral Analysis (VLM)</h3>
+                    <p>
+                        Vision Language Models assess whether detected behavior is normal or suspicious. A delivery person at the front door is different from someone trying windows.
+                    </p>
+
+                    <h3>Layer 5: Context Awareness</h3>
+                    <p>
+                        Security mode (Home/Away/Night/Guest) adjusts what's considered alertable. Person in kitchen at noon? Normal. Same person at 3 AM in Away mode? Alert.
+                    </p>
+
+                    <h2>Techniques That Work</h2>
+
+                    <h3>1. Confidence Thresholds</h3>
+                    <p>
+                        Only alert when detection confidence exceeds a threshold. A 60% "might be a person" doesn't trigger an alert; a 95% "definitely a person" does.
+                    </p>
+
+                    <h3>2. Zone-Based Filtering</h3>
+                    <p>
+                        Define areas of interest. Motion on the sidewalk (public area) is ignored; motion at your door (private area) triggers analysis.
+                    </p>
+
+                    <h3>3. Time-Based Rules</h3>
+                    <p>
+                        Adjust sensitivity based on time. Higher sensitivity at night when activity is unexpected; lower during day when normal activity occurs.
+                    </p>
+
+                    <h3>4. Temporal Smoothing</h3>
+                    <p>
+                        Require sustained detection before alerting. A person must be present for 3+ seconds, eliminating brief false detections.
+                    </p>
+
+                    <h2>Results</h2>
+                    <p>
+                        With these techniques combined, DALEXOR achieves:
+                    </p>
+                    <ul>
+                        <li><strong>95%+ reduction</strong> in false alarms vs motion detection</li>
+                        <li><strong>99.7% accuracy</strong> in person detection</li>
+                        <li><strong>&lt;1% false positive rate</strong> for security alerts</li>
+                        <li><strong>Zero missed detections</strong> of actual intruders in testing</li>
+                    </ul>
+
+                    <h2>The Human Factor</h2>
+                    <p>
+                        Fewer, more accurate alerts means operators actually pay attention. When an alert fires, it matters. This human factor—restored trust in the system—is perhaps the most important outcome of reducing false alarms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

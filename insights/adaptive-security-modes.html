@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Security Modes: Context-Aware Threat Detection | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .article-hero { padding: 10rem 0 4rem; background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); }
+        .article-hero .container { max-width: 800px; }
+        .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 0; }
+        .article-body h2 { font-size: 1.75rem; margin: 3rem 0 1rem; color: var(--color-purple-300); }
+        .article-body h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .article-body ul { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-body li { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-secondary); }
+        .mode-card { background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .mode-card h4 { color: var(--color-purple-300); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+        .mode-card p { margin-bottom: 0.75rem; }
+        .mode-card ul { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="../platform.html" class="nav-link">Platform</a></li>
+                <li><a href="../insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-hero">
+            <div class="container">
+                <span class="section-label">Best Practices</span>
+                <h1 class="page-title">Adaptive Security Modes: Context-Aware Threat Detection</h1>
+                <div class="article-meta" style="margin-top: 1.5rem; color: var(--color-text-secondary);">
+                    <span>DALEXOR Security Team</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>7 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="article-body">
+                    <p class="lead" style="font-size: 1.25rem; color: var(--color-text-primary);">
+                        A person walking through your living room at 2 PM is normal. The same person at 2 AM when you're on vacation is an emergency. Intelligent security systems must understand context—and that's where adaptive security modes come in.
+                    </p>
+
+                    <h2>The Problem with Static Security</h2>
+                    <p>
+                        Traditional security systems have one setting: armed or disarmed. This binary approach creates two problems:
+                    </p>
+                    <ul>
+                        <li><strong>Too many false alarms:</strong> System alerts on normal activity (family member getting water at night)</li>
+                        <li><strong>Missed threats:</strong> System ignores suspicious behavior because it's "disarmed"</li>
+                    </ul>
+                    <p>
+                        The solution is context-aware security that adjusts its threat assessment based on the situation.
+                    </p>
+
+                    <h2>Four Security Modes</h2>
+
+                    <div class="mode-card">
+                        <h4>🏠 Home Mode</h4>
+                        <p><strong>Context:</strong> Family is home, normal daily activity expected</p>
+                        <p><strong>Focus:</strong> Safety threats (weapons, falls, fires), not presence</p>
+                        <ul>
+                            <li>Known person in any room = Normal (threat: 5-15)</li>
+                            <li>Unknown person = Alert for verification (threat: 50-70)</li>
+                            <li>Weapon detected = Immediate alert (threat: 90+)</li>
+                        </ul>
+                    </div>
+
+                    <div class="mode-card">
+                        <h4>🚪 Away Mode</h4>
+                        <p><strong>Context:</strong> House should be EMPTY</p>
+                        <p><strong>Focus:</strong> ANY human presence is suspicious</p>
+                        <ul>
+                            <li>Any person detected = High alert (threat: 80-90)</li>
+                            <li>Even known person = Suspicious, why are they there? (threat: 60-70)</li>
+                            <li>Signs of forced entry = Maximum alert (threat: 95+)</li>
+                        </ul>
+                    </div>
+
+                    <div class="mode-card">
+                        <h4>🌙 Night Mode</h4>
+                        <p><strong>Context:</strong> Everyone should be sleeping</p>
+                        <p><strong>Focus:</strong> Why is someone awake? Where are they going?</p>
+                        <ul>
+                            <li>Person in pajamas going to bathroom = Normal (threat: 10-20)</li>
+                            <li>Fully dressed person at 3 AM = Suspicious (threat: 50-60)</li>
+                            <li>Person searching through rooms = High alert (threat: 70-80)</li>
+                        </ul>
+                    </div>
+
+                    <div class="mode-card">
+                        <h4>👥 Guest Mode</h4>
+                        <p><strong>Context:</strong> Visitors expected, monitor valuables</p>
+                        <p><strong>Focus:</strong> Protect valuables while allowing normal guest activity</p>
+                        <ul>
+                            <li>Guest in common areas = Normal (threat: 10-20)</li>
+                            <li>Guest near valuables/electronics = Monitor (threat: 40-50)</li>
+                            <li>Guest searching drawers/cabinets = Alert (threat: 60-70)</li>
+                        </ul>
+                    </div>
+
+                    <h2>How It Works</h2>
+                    <p>
+                        Each mode provides different instructions to the AI analysis engine. The same detected person triggers completely different assessments:
+                    </p>
+                    <ul>
+                        <li><strong>Detection:</strong> "Person in kitchen"</li>
+                        <li><strong>Home Mode:</strong> "Family member getting snack. Normal activity."</li>
+                        <li><strong>Away Mode:</strong> "INTRUDER IN KITCHEN. House should be empty!"</li>
+                        <li><strong>Night Mode:</strong> "Person awake at 2 AM. Checking if normal bathroom trip or suspicious."</li>
+                    </ul>
+
+                    <h2>Automatic Mode Switching</h2>
+                    <p>
+                        Advanced systems can switch modes automatically based on:
+                    </p>
+                    <ul>
+                        <li><strong>Time schedules:</strong> Night mode from 11 PM to 6 AM</li>
+                        <li><strong>Geofencing:</strong> Away mode when all phones leave the area</li>
+                        <li><strong>Manual override:</strong> User activates Guest mode for a party</li>
+                        <li><strong>Smart home integration:</strong> Away mode when alarm system is armed</li>
+                    </ul>
+
+                    <h2>Results</h2>
+                    <p>
+                        Adaptive security modes dramatically improve both security and usability:
+                    </p>
+                    <ul>
+                        <li><strong>90% reduction</strong> in false alarms</li>
+                        <li><strong>Faster response</strong> to real threats (no alert fatigue)</li>
+                        <li><strong>Better user experience</strong> (system "understands" your life)</li>
+                        <li><strong>More actionable alerts</strong> with context included</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

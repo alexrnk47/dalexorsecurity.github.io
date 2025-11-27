@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the EU AI Act: Implications for Surveillance Systems | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .article-hero { padding: 10rem 0 4rem; background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); }
+        .article-hero .container { max-width: 800px; }
+        .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 0; }
+        .article-body h2 { font-size: 1.75rem; margin: 3rem 0 1rem; color: var(--color-purple-300); }
+        .article-body h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .article-body ul, .article-body ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-body li { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-secondary); }
+        .article-body blockquote { border-left: 3px solid var(--color-purple-400); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--color-text-tertiary); }
+        .article-body code { background: rgba(139, 92, 246, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: 'Consolas', monospace; }
+        .info-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .info-box h4 { color: var(--color-purple-300); margin-bottom: 0.75rem; }
+        .warning-box { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .warning-box h4 { color: #ef4444; margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="../platform.html" class="nav-link">Platform</a></li>
+                <li><a href="../insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="../login.html" class="nav-link">Login</a>
+                <a href="../contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-hero">
+            <div class="container">
+                <span class="section-label">Compliance</span>
+                <h1 class="page-title">Understanding the EU AI Act: Implications for Surveillance Systems</h1>
+                <div class="article-meta" style="margin-top: 1.5rem; color: var(--color-text-secondary);">
+                    <span>DALEXOR Security Team</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>12 min read</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>November 2024</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="article-body">
+                    <p class="lead" style="font-size: 1.25rem; color: var(--color-text-primary);">
+                        The European Union's Artificial Intelligence Act (Regulation 2024/1689) represents the world's first comprehensive legal framework for AI systems. For surveillance and security technology providers, understanding its implications is not optional—it's essential for market access and legal compliance.
+                    </p>
+
+                    <h2>What is the EU AI Act?</h2>
+                    <p>
+                        Adopted in March 2024 and entering into force in August 2024, the EU AI Act establishes a risk-based regulatory framework for artificial intelligence systems. Unlike sector-specific regulations, it applies horizontally across all industries where AI is deployed, including security and surveillance.
+                    </p>
+                    <p>
+                        The regulation categorizes AI systems into four risk tiers: unacceptable risk (prohibited), high risk (heavily regulated), limited risk (transparency obligations), and minimal risk (no specific requirements). Surveillance systems, depending on their design and deployment context, can fall into any of these categories.
+                    </p>
+
+                    <h2>Risk Classification for Surveillance AI</h2>
+                    
+                    <h3>Prohibited Practices (Article 5)</h3>
+                    <p>The following AI practices are completely banned in the EU:</p>
+                    <ul>
+                        <li><strong>Real-time remote biometric identification in public spaces</strong> for law enforcement, except in narrowly defined circumstances with judicial authorization</li>
+                        <li><strong>Social scoring systems</strong> that evaluate individuals based on social behavior leading to detrimental treatment</li>
+                        <li><strong>Emotion recognition</strong> in workplace and educational settings (with limited exceptions)</li>
+                        <li><strong>Biometric categorization</strong> to infer sensitive characteristics like race, political opinions, or sexual orientation</li>
+                        <li><strong>Untargeted scraping</strong> of facial images from the internet or CCTV to build facial recognition databases</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <h4>⚠️ Critical Distinction</h4>
+                        <p style="margin-bottom: 0;">
+                            "Public spaces" means areas accessible to the general public (streets, parks, shopping centers). Private premises like homes, offices, and factories are NOT public spaces under the regulation. This distinction is crucial for residential and commercial security systems.
+                        </p>
+                    </div>
+
+                    <h3>High-Risk AI Systems (Annex III)</h3>
+                    <p>
+                        Biometric identification systems used for purposes other than those prohibited are classified as high-risk. This includes:
+                    </p>
+                    <ul>
+                        <li>Remote biometric identification systems (not real-time, not in public spaces)</li>
+                        <li>AI systems used for access control to critical infrastructure</li>
+                        <li>Systems making decisions about individuals' access to essential services</li>
+                    </ul>
+                    <p>
+                        High-risk systems must comply with extensive requirements including risk management, data governance, technical documentation, human oversight, accuracy and robustness standards, and conformity assessments.
+                    </p>
+
+                    <h3>Limited-Risk AI Systems</h3>
+                    <p>
+                        Many residential and commercial surveillance systems fall into this category. Limited-risk systems have transparency obligations—users must be informed they are interacting with an AI system. For biometric systems, this means clearly indicating when facial recognition or other biometric processing is occurring.
+                    </p>
+
+                    <div class="info-box">
+                        <h4>Where Does DALEXOR Fall?</h4>
+                        <p style="margin-bottom: 0;">
+                            DALEXOR is designed as a <strong>limited-risk AI system</strong> for private premises. It performs biometric identification only for enrolled persons who have given explicit consent, and it is technically incapable of storing biometric data for unknown individuals. This architecture ensures compliance with the EU AI Act's privacy-by-design requirements.
+                        </p>
+                    </div>
+
+                    <h2>Key Compliance Requirements</h2>
+
+                    <h3>1. Human Oversight (Article 14)</h3>
+                    <p>
+                        AI systems must be designed to allow effective human oversight. For surveillance systems, this means:
+                    </p>
+                    <ul>
+                        <li>Human operators must be able to understand the system's capabilities and limitations</li>
+                        <li>Outputs should be interpretable and verifiable by humans</li>
+                        <li>Operators must be able to override or reverse AI decisions</li>
+                        <li>The system should include mechanisms to stop operation if needed</li>
+                    </ul>
+
+                    <h3>2. Data Governance (Article 10)</h3>
+                    <p>
+                        Training and validation data must meet quality criteria. For biometric systems:
+                    </p>
+                    <ul>
+                        <li>Data must be relevant, representative, and free of errors</li>
+                        <li>Appropriate data minimization practices must be followed</li>
+                        <li>Biometric data is subject to GDPR's special category data requirements</li>
+                    </ul>
+
+                    <h3>3. Transparency (Article 13)</h3>
+                    <p>
+                        Users must receive clear information about:
+                    </p>
+                    <ul>
+                        <li>The system's intended purpose and capabilities</li>
+                        <li>The level of accuracy, robustness, and cybersecurity</li>
+                        <li>Any circumstances that may impact performance</li>
+                        <li>Human oversight measures in place</li>
+                    </ul>
+
+                    <h3>4. Record-Keeping (Article 12)</h3>
+                    <p>
+                        High-risk systems must maintain logs that enable traceability of the AI system's operation throughout its lifecycle. This includes audit trails of decisions, inputs, and outputs.
+                    </p>
+
+                    <h2>Practical Implementation for Security Systems</h2>
+
+                    <h3>Privacy by Design</h3>
+                    <p>
+                        The most effective compliance strategy is building privacy protection into the system architecture itself. Key principles:
+                    </p>
+                    <ul>
+                        <li><strong>Data minimization:</strong> Only collect and process data necessary for the stated purpose</li>
+                        <li><strong>Purpose limitation:</strong> Use data only for the purposes for which consent was obtained</li>
+                        <li><strong>Storage limitation:</strong> Implement automatic deletion after retention periods expire</li>
+                        <li><strong>Technical enforcement:</strong> Make privacy violations technically impossible, not just policy-prohibited</li>
+                    </ul>
+
+                    <blockquote>
+                        "The best compliance is when the system cannot violate the rules, not when it promises not to."
+                    </blockquote>
+
+                    <h3>Consent Management</h3>
+                    <p>
+                        For biometric processing, consent must be:
+                    </p>
+                    <ul>
+                        <li><strong>Freely given:</strong> No coercion or significant imbalance of power</li>
+                        <li><strong>Specific:</strong> For a particular purpose, not blanket consent</li>
+                        <li><strong>Informed:</strong> Clear explanation of what data is collected and how it's used</li>
+                        <li><strong>Unambiguous:</strong> Clear affirmative action (not pre-ticked boxes)</li>
+                        <li><strong>Withdrawable:</strong> Easy to revoke at any time</li>
+                    </ul>
+
+                    <h2>Timeline and Enforcement</h2>
+                    <p>
+                        The EU AI Act has a phased implementation:
+                    </p>
+                    <ul>
+                        <li><strong>February 2025:</strong> Prohibitions on unacceptable-risk AI practices take effect</li>
+                        <li><strong>August 2025:</strong> Obligations for general-purpose AI models apply</li>
+                        <li><strong>August 2026:</strong> Full application of all provisions, including high-risk system requirements</li>
+                    </ul>
+                    <p>
+                        Penalties for non-compliance are significant: up to €35 million or 7% of global annual turnover for prohibited practices, and up to €15 million or 3% for other violations.
+                    </p>
+
+                    <h2>Recommendations for Security Providers</h2>
+                    <ol>
+                        <li><strong>Audit your systems:</strong> Determine which risk category your AI systems fall into</li>
+                        <li><strong>Document everything:</strong> Maintain comprehensive technical documentation</li>
+                        <li><strong>Implement privacy by design:</strong> Build compliance into architecture, not just policy</li>
+                        <li><strong>Train your team:</strong> Ensure operators understand AI capabilities and limitations</li>
+                        <li><strong>Prepare for conformity assessments:</strong> High-risk systems will require third-party audits</li>
+                        <li><strong>Monitor regulatory guidance:</strong> The European AI Office will issue implementing acts and guidelines</li>
+                    </ol>
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        The EU AI Act represents a paradigm shift in how AI systems, including surveillance technology, are regulated. For security providers, compliance is not just a legal requirement—it's a competitive advantage. Systems designed with privacy and transparency at their core will be better positioned for the European market and increasingly for global markets adopting similar frameworks.
+                    </p>
+                    <p>
+                        At DALEXOR, we've built our platform from the ground up with these principles in mind. Our architecture makes certain privacy violations technically impossible, not just prohibited by policy. This approach ensures our customers can deploy with confidence, knowing their security system meets the highest regulatory standards.
+                    </p>
+
+                    <div class="info-box" style="margin-top: 3rem;">
+                        <h4>Need Help with Compliance?</h4>
+                        <p>
+                            Our team can help you understand how DALEXOR meets EU AI Act requirements and how to implement compliant surveillance in your organization.
+                        </p>
+                        <a href="../contact.html" class="btn btn-primary" style="margin-top: 1rem;">Contact Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

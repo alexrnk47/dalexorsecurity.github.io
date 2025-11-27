@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy-First Biometrics: Building Trust Through Transparency | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .article-hero { padding: 10rem 0 4rem; background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); }
+        .article-hero .container { max-width: 800px; }
+        .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 0; }
+        .article-body h2 { font-size: 1.75rem; margin: 3rem 0 1rem; color: var(--color-purple-300); }
+        .article-body h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .article-body ul { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-body li { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-secondary); }
+        .article-body blockquote { border-left: 3px solid var(--color-purple-400); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--color-text-tertiary); }
+        .warning-box { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .warning-box h4 { color: #ef4444; margin-bottom: 0.75rem; }
+        .success-box { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .success-box h4 { color: #10b981; margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="../platform.html" class="nav-link">Platform</a></li>
+                <li><a href="../insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-hero">
+            <div class="container">
+                <span class="section-label">Privacy</span>
+                <h1 class="page-title">Privacy-First Biometrics: Building Trust Through Transparency</h1>
+                <div class="article-meta" style="margin-top: 1.5rem; color: var(--color-text-secondary);">
+                    <span>DALEXOR Security Team</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>6 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="article-body">
+                    <p class="lead" style="font-size: 1.25rem; color: var(--color-text-primary);">
+                        Face recognition is powerful—and controversial. The difference between a privacy nightmare and a trusted security tool lies entirely in how it's implemented. Here's how to do it right.
+                    </p>
+
+                    <h2>The Privacy Problem with Traditional Systems</h2>
+                    <p>
+                        Most surveillance systems treat every face as data to be collected, stored, and analyzed. This creates massive privacy risks:
+                    </p>
+                    
+                    <div class="warning-box">
+                        <h4>⚠️ Traditional Approach (Privacy Nightmare)</h4>
+                        <ul style="margin-bottom: 0;">
+                            <li>Captures and stores face data of EVERYONE</li>
+                            <li>Builds databases of unknown individuals</li>
+                            <li>Retains biometric data indefinitely</li>
+                            <li>Can be used for mass surveillance</li>
+                            <li>Violates GDPR, BIPA, and EU AI Act</li>
+                        </ul>
+                    </div>
+
+                    <h2>The Privacy-First Alternative</h2>
+                    <p>
+                        A privacy-first approach flips the model: instead of "collect everything, figure out privacy later," it's "protect privacy by default, only process what's consented."
+                    </p>
+
+                    <div class="success-box">
+                        <h4>✅ Privacy-First Approach (DALEXOR)</h4>
+                        <ul style="margin-bottom: 0;">
+                            <li>Only stores biometric data for ENROLLED persons with consent</li>
+                            <li>Unknown persons: NO face data stored, only "unknown person detected"</li>
+                            <li>All data stays LOCAL on user's hardware</li>
+                            <li>Automatic deletion after retention period</li>
+                            <li>Technically impossible to build mass surveillance database</li>
+                        </ul>
+                    </div>
+
+                    <h2>Key Principles</h2>
+
+                    <h3>1. Consent-Based Enrollment</h3>
+                    <p>
+                        Biometric data should only be processed for individuals who have explicitly consented. In a home security context, this means family members who choose to enroll. Visitors, delivery persons, and strangers are never enrolled without consent.
+                    </p>
+
+                    <h3>2. Technical Enforcement</h3>
+                    <p>
+                        Privacy policies are only as good as their enforcement. The best protection is making violations technically impossible:
+                    </p>
+                    <ul>
+                        <li>Hardcoded logic that discards unknown person biometrics</li>
+                        <li>No configuration option to enable mass collection</li>
+                        <li>Automatic purging of temporary processing buffers</li>
+                        <li>Tamper detection that disables the system if modified</li>
+                    </ul>
+
+                    <blockquote>
+                        "The best privacy protection is when the system cannot violate privacy, not when it promises not to."
+                    </blockquote>
+
+                    <h3>3. Data Minimization</h3>
+                    <p>
+                        Collect only what's necessary. For unknown persons, an event log ("Unknown person detected at front door, 3:42 PM") provides security value without storing biometric data.
+                    </p>
+
+                    <h3>4. Local Processing</h3>
+                    <p>
+                        Cloud processing means your data on someone else's servers. Local processing keeps everything on hardware you control. This eliminates data breach risks and ensures compliance with data localization requirements.
+                    </p>
+
+                    <h2>Regulatory Compliance</h2>
+                    <p>
+                        Privacy-first design isn't just ethical—it's legally required in many jurisdictions:
+                    </p>
+                    <ul>
+                        <li><strong>GDPR (EU):</strong> Biometric data is "special category" requiring explicit consent</li>
+                        <li><strong>BIPA (Illinois):</strong> Requires written consent, retention policies, and prohibits sale of biometric data</li>
+                        <li><strong>EU AI Act:</strong> Prohibits building biometric databases through untargeted scraping</li>
+                        <li><strong>CCPA (California):</strong> Gives consumers rights over their biometric information</li>
+                    </ul>
+
+                    <h2>Building Trust</h2>
+                    <p>
+                        Ultimately, privacy-first biometrics is about trust. Users need to trust that their security system protects them without becoming a surveillance tool. Transparency about what data is collected, how it's used, and how it's protected builds that trust.
+                    </p>
+                    <p>
+                        At DALEXOR, we publish exactly how our system handles biometric data—because we're proud of our privacy-first architecture, not hiding from it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

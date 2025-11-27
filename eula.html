@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End User License Agreement | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="platform.html" class="nav-link">Platform</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label">Legal</span>
+            <h1 class="page-title">End User License Agreement</h1>
+            <p class="page-subtitle">DALEXOR Intelligent Surveillance Platform</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="legal-content">
+                <div class="legal-meta">
+                    <p><strong>Document Version:</strong> 2.0 | <strong>Effective Date:</strong> November 28, 2024 | <strong>Last Updated:</strong> November 28, 2024</p>
+                    <p><strong>Jurisdiction:</strong> European Union / Romania | <strong>Governing Law:</strong> Romanian Law</p>
+                    <p><strong>Regulatory Framework:</strong> GDPR (EU) 2016/679 | EU AI Act (EU) 2024/1689 | BIPA 740 ILCS 14 | CCPA Cal. Civ. Code § 1798</p>
+                </div>
+
+                <h2>ARTICLE 1: DEFINITIONS AND INTERPRETATION</h2>
+                <h3>1.1 Definitions</h3>
+                <p><strong>"Affiliate"</strong> means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where "control" means ownership of more than fifty percent (50%) of the voting securities.</p>
+                <p><strong>"Authorized Users"</strong> means individuals authorized by Licensee to access the Software, including employees, contractors, and agents bound by terms at least as protective as this Agreement.</p>
+                <p><strong>"Biometric Data"</strong> means personal data resulting from technical processing relating to physical, physiological, or behavioral characteristics allowing unique identification, including facial geometry, embeddings, voice patterns, and gait analysis.</p>
+                <p><strong>"Confidential Information"</strong> means non-public information disclosed by either party designated as confidential, including trade secrets, business plans, algorithms, source code, and customer lists.</p>
+                <p><strong>"Data Controller"</strong> and <strong>"Data Processor"</strong> have meanings under GDPR (EU) 2016/679.</p>
+                <p><strong>"Enrolled Person"</strong> means a natural person whose Biometric Data has been voluntarily submitted with explicit, informed consent for identification purposes.</p>
+                <p><strong>"Intellectual Property Rights"</strong> means all patents, copyrights, trade secrets, trademarks, and other intellectual property rights worldwide.</p>
+                <p><strong>"Licensee"</strong> means the entity agreeing to this Agreement. <strong>"Licensor"</strong> means Dalexor SRL, Romania, EU.</p>
+                <p><strong>"Personal Data"</strong> has the meaning under GDPR. <strong>"Processing"</strong> includes any operation on Personal Data.</p>
+                <p><strong>"Software"</strong> means the DALEXOR Intelligent Surveillance Platform, including all programs, algorithms, neural networks, databases, APIs, Updates, and Documentation.</p>
+                <p><strong>"Unknown Person"</strong> means any natural person detected who is not an Enrolled Person.</p>
+
+                <h2>ARTICLE 2: LICENSE GRANT AND RESTRICTIONS</h2>
+                <h3>2.1 License Grant</h3>
+                <p>Subject to this Agreement and payment of License Fees, Licensor grants Licensee a limited, non-exclusive, non-transferable, non-sublicensable license to:</p>
+                <ol>
+                    <li>Install and use the Software on Licensee's hardware for internal business purposes;</li>
+                    <li>Permit Authorized Users to access the Software;</li>
+                    <li>Make reasonable backup copies;</li>
+                    <li>Use Documentation in connection with authorized use.</li>
+                </ol>
+
+                <h3>2.2 License Restrictions</h3>
+                <p>Licensee shall NOT:</p>
+                <ol>
+                    <li>Copy, modify, adapt, or create derivative works except as permitted;</li>
+                    <li>Reverse engineer, disassemble, or decompile the Software;</li>
+                    <li>Rent, lease, sell, sublicense, or distribute the Software;</li>
+                    <li>Remove proprietary notices or marks;</li>
+                    <li>Use for unlawful purposes or to develop competing products;</li>
+                    <li>Introduce Malicious Code or circumvent security features;</li>
+                    <li>Store, retain, or create profiles from Biometric Data of Unknown Persons under any circumstances;</li>
+                    <li>Use for mass surveillance, social scoring, or purposes prohibited by EU AI Act;</li>
+                    <li>Export in violation of export control laws.</li>
+                </ol>
+
+                <h3>2.3 Reservation of Rights</h3>
+                <p>Licensor reserves all rights not expressly granted. The Software is licensed, not sold. Licensor retains all Intellectual Property Rights.</p>
+
+                <h2>ARTICLE 3: DATA PROTECTION AND PRIVACY COMPLIANCE</h2>
+                <h3>3.1 Privacy by Design</h3>
+                <p>The Software implements privacy by design per GDPR Article 25:</p>
+                <ol>
+                    <li><strong>Biometric Data Minimization:</strong> <strong>The Software is technically incapable of storing Biometric Data of Unknown Persons.</strong> The processing pipeline automatically discards all facial embeddings, geometry, and photographs for non-enrolled individuals within 100 milliseconds. Only anonymized event logs ("Unknown person detected at [time]") are retained.</li>
+                    <li><strong>Consent-Based Enrollment:</strong> Biometric Data processed only for Enrolled Persons with explicit consent.</li>
+                    <li><strong>Data Localization:</strong> All data processed locally unless cloud features explicitly enabled.</li>
+                    <li><strong>Automatic Deletion:</strong> Configurable retention periods with automatic purging.</li>
+                </ol>
+
+                <h3>3.2 Roles and Responsibilities</h3>
+                <p><strong>Licensee is Data Controller</strong> for all Personal Data processed through the Software. Licensee determines purposes, obtains consents, provides notices, and ensures compliance.</p>
+                <p><strong>Licensor is Data Processor</strong> only when processing on Licensee's behalf through cloud services, acting only per documented instructions.</p>
+
+                <h3>3.3 Biometric Data Compliance and Technical Enforcement</h3>
+                <p>Licensee acknowledges:</p>
+                <ol>
+                    <li>Biometric Data is special category data under GDPR Article 9 and subject to BIPA and similar laws;</li>
+                    <li>Licensee must obtain explicit consent from Enrolled Persons;</li>
+                    <li>Licensee must provide written retention and destruction policies;</li>
+                    <li>Licensee must NOT sell, lease, or profit from Biometric Data;</li>
+                    <li>Licensee must protect Biometric Data with reasonable care.</li>
+                </ol>
+                <p><strong>TECHNICAL ENFORCEMENT MECHANISMS:</strong> The Software implements the following architectural safeguards to enforce privacy compliance:</p>
+                <ol>
+                    <li><strong>Hardcoded Privacy Controls:</strong> The Software's core processing pipeline contains non-configurable code that automatically discards facial embeddings, facial geometry data, and detailed VLM descriptions for any person not matched against the Enrolled Persons database. This behavior cannot be disabled through configuration, API calls, or user interface settings.</li>
+                    <li><strong>Enrollment Verification:</strong> Before storing any Biometric Data, the Software requires affirmative enrollment action through the designated enrollment interface, which logs the enrollment event with timestamp, enrolling user, and consent acknowledgment.</li>
+                    <li><strong>Automatic Data Purging:</strong> Temporary processing buffers containing facial data for Unknown Persons are purged from memory within 100 milliseconds of the non-match determination. No disk writes occur for Unknown Person biometric data.</li>
+                    <li><strong>Audit Logging:</strong> All biometric processing events are logged to an immutable audit trail including: enrollment events, recognition attempts, match/non-match outcomes, and data deletion events. Logs are retained for the Subscription Term plus three (3) years.</li>
+                    <li><strong>Tamper Detection:</strong> Modification of privacy-enforcing code modules triggers integrity verification failures that disable biometric processing functionality until the Software is restored to an unmodified state.</li>
+                </ol>
+                <p><strong>LICENSEE CIRCUMVENTION PROHIBITION:</strong> Any attempt by Licensee to circumvent, disable, modify, or bypass the Technical Enforcement Mechanisms described above constitutes a material breach of this Agreement and may constitute a criminal offense under applicable computer fraud and data protection laws. Such circumvention shall immediately terminate all licenses granted hereunder and Licensee shall be liable for all damages arising therefrom, including statutory damages under BIPA (currently $1,000-$5,000 per violation) and GDPR administrative fines (up to €20,000,000 or 4% of annual worldwide turnover).</p>
+
+                <h3>3.4 EU AI Act Compliance and Prohibited Uses</h3>
+                <p>Per Regulation (EU) 2024/1689 (the "EU AI Act"):</p>
+                <ol>
+                    <li>Software for biometric identification of Enrolled Persons in private spaces is classified as limited-risk AI;</li>
+                    <li>Software is NOT designed, intended, or licensed for high-risk real-time remote biometric identification in publicly accessible spaces;</li>
+                    <li>Licensee shall ensure human oversight per Article 14 and not rely solely on automated decisions;</li>
+                    <li>Licensee shall maintain records demonstrating compliance with applicable AI Act requirements.</li>
+                </ol>
+                
+                <p><strong>DEFINITION OF MASS SURVEILLANCE:</strong> For purposes of this Agreement, "Mass Surveillance" means any of the following prohibited uses:</p>
+                <ol>
+                    <li><strong>Indiscriminate Public Monitoring:</strong> Deployment of the Software to continuously monitor, track, or identify members of the general public in publicly accessible spaces (streets, parks, shopping centers, transportation hubs) without individualized suspicion or specific security justification;</li>
+                    <li><strong>Population-Scale Biometric Databases:</strong> Use of the Software to build, contribute to, or query biometric databases containing data on more than 1,000 individuals who have not provided explicit consent for such inclusion;</li>
+                    <li><strong>Dragnet Surveillance:</strong> Configuration of the Software to capture and retain biometric data on all persons entering a monitored area, rather than limiting processing to Enrolled Persons and generating only anonymized event logs for Unknown Persons;</li>
+                    <li><strong>Government Mass Surveillance Programs:</strong> Integration of the Software with any government program designed to monitor political activities, religious practices, ethnic communities, or other protected characteristics of populations;</li>
+                    <li><strong>Cross-Jurisdictional Tracking:</strong> Use of the Software to track individuals across multiple unrelated premises, organizations, or jurisdictions without lawful authority and individual consent.</li>
+                </ol>
+                
+                <p><strong>PROHIBITED AI PRACTICES (EU AI Act Article 5):</strong> Licensee SHALL NOT use the Software for:</p>
+                <ol>
+                    <li><strong>Social Scoring:</strong> Evaluating or classifying natural persons based on social behavior or personality characteristics, where such evaluation leads to detrimental treatment disproportionate to the context;</li>
+                    <li><strong>Exploitation of Vulnerabilities:</strong> Targeting persons due to age, disability, or social/economic situation in ways that materially distort their behavior and cause significant harm;</li>
+                    <li><strong>Subliminal Manipulation:</strong> Deploying techniques beyond a person's consciousness to materially distort behavior in ways causing significant harm;</li>
+                    <li><strong>Real-Time Remote Biometric Identification in Public Spaces:</strong> Using the Software for law enforcement purposes to identify natural persons in real-time in publicly accessible spaces, except as explicitly permitted under Article 5(1)(h) with appropriate judicial authorization;</li>
+                    <li><strong>Emotion Recognition in Workplace/Education:</strong> Inferring emotions of natural persons in workplace or educational contexts, except for medical or safety purposes;</li>
+                    <li><strong>Biometric Categorization for Protected Characteristics:</strong> Categorizing natural persons based on biometric data to deduce race, political opinions, trade union membership, religious beliefs, sex life, or sexual orientation.</li>
+                </ol>
+
+                <h3>3.5 International Transfers</h3>
+                <p>Transfers outside EEA require appropriate safeguards: Standard Contractual Clauses, Binding Corporate Rules, or adequacy decisions.</p>
+
+                <h2>ARTICLE 4: INTELLECTUAL PROPERTY</h2>
+                <h3>4.1 Ownership</h3>
+                <p>Licensor owns all rights in the Software. Licensee owns all rights in Licensee's data. Neither acquires rights in the other's IP except as expressly granted.</p>
+
+                <h3>4.2 Feedback</h3>
+                <p>Licensee grants Licensor perpetual, royalty-free license to use any Feedback provided regarding the Software.</p>
+
+                <h2>ARTICLE 5: CONFIDENTIALITY AND AUDIT RIGHTS</h2>
+                <h3>5.1 Confidentiality Obligations</h3>
+                <p>Each party shall: (a) hold the other party's Confidential Information in strict confidence using at least the same degree of care used to protect its own confidential information, but no less than reasonable care; (b) not disclose Confidential Information except to employees, contractors, and agents with a need-to-know who are bound by confidentiality obligations at least as protective as those herein; (c) use Confidential Information only for purposes of exercising rights or performing obligations under this Agreement; (d) promptly notify the other party of any unauthorized disclosure.</p>
+                
+                <h3>5.2 Compelled Disclosure</h3>
+                <p>If legally compelled to disclose Confidential Information, the receiving party shall: (a) provide prompt written notice to the disclosing party (to the extent legally permitted); (b) cooperate with the disclosing party's efforts to obtain a protective order; (c) disclose only the minimum information legally required.</p>
+                
+                <h3>5.3 Compliance Audit Rights</h3>
+                <p><strong>LICENSOR AUDIT RIGHTS:</strong> Licensor may, upon thirty (30) days' written notice and no more than once per calendar year (unless a prior audit revealed material non-compliance), audit Licensee's use of the Software to verify compliance with this Agreement, including:</p>
+                <ol>
+                    <li>Verification that the number of cameras, users, and installations does not exceed licensed quantities;</li>
+                    <li>Inspection of audit logs to confirm compliance with biometric data processing restrictions;</li>
+                    <li>Review of enrollment records to verify consent documentation;</li>
+                    <li>Assessment of human oversight procedures and documentation.</li>
+                </ol>
+                <p>Audits shall be conducted during normal business hours, with reasonable advance scheduling, and in a manner that minimizes disruption to Licensee's operations. Licensee shall provide reasonable cooperation and access to relevant systems, records, and personnel. If an audit reveals material non-compliance, Licensee shall bear the reasonable costs of the audit and shall cure such non-compliance within thirty (30) days.</p>
+                
+                <h3>5.4 Licensee Self-Certification</h3>
+                <p>Upon Licensor's written request (no more than quarterly), Licensee shall provide a written certification signed by an authorized officer confirming: (a) compliance with all license restrictions; (b) compliance with biometric data processing requirements; (c) implementation of required human oversight measures; (d) absence of any known security incidents involving the Software.</p>
+
+                <h2>ARTICLE 6: WARRANTIES AND DISCLAIMERS</h2>
+                <h3>6.1 Licensor Warranties</h3>
+                <p>Licensor warrants: right to grant licenses; Software performs per Documentation for 90 days; no Malicious Code; designed for data protection compliance.</p>
+
+                <h3>6.2 DISCLAIMER AND HUMAN OVERSIGHT REQUIREMENTS</h3>
+                <p><strong>EXCEPT AS IN 6.1, SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</strong></p>
+                <p><strong>DETECTION ACCURACY DISCLAIMER:</strong> While the Software achieves 99.7% detection accuracy in controlled testing environments, real-world performance varies based on lighting conditions, camera quality, occlusion, environmental factors, and subject positioning. Licensee acknowledges that:</p>
+                <ol>
+                    <li>False positives (incorrect detections) and false negatives (missed detections) will occur;</li>
+                    <li>Face recognition confidence scores indicate probability, not certainty;</li>
+                    <li>Behavioral analysis and threat assessments are probabilistic indicators requiring human validation;</li>
+                    <li>The Software is a decision-support tool that AUGMENTS but does not REPLACE human security personnel.</li>
+                </ol>
+                <p><strong>MANDATORY HUMAN OVERSIGHT:</strong> Pursuant to EU AI Act Article 14, Licensee SHALL implement human oversight measures including: (a) designated personnel trained to interpret Software outputs; (b) documented procedures for validating automated alerts before taking action; (c) override capabilities allowing human operators to disregard or modify Software recommendations; (d) regular audits of Software performance and decision accuracy. Licensee SHALL NOT configure the Software to take autonomous actions (such as door locks, alarms, or law enforcement notifications) without human confirmation, except where explicitly enabled and documented in writing. <strong>Licensee acknowledges that breach of this human oversight requirement automatically and immediately terminates all licenses granted under this Agreement without notice or cure period.</strong></p>
+
+                <h2>ARTICLE 7: LIMITATION OF LIABILITY</h2>
+                <h3>7.1 Exclusion of Consequential Damages</h3>
+                <p><strong>NEITHER PARTY LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES INCLUDING LOST PROFITS, GOODWILL, DATA, EVEN IF ADVISED OF POSSIBILITY.</strong></p>
+
+                <h3>7.2 Liability Cap</h3>
+                <p><strong>LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF: (A) LICENSE FEES PAID IN PRECEDING 12 MONTHS; OR (B) €1,000.</strong></p>
+
+                <h3>7.3 Exceptions</h3>
+                <p>Limitations do not apply to: license restriction breaches; confidentiality breaches; indemnification obligations; payment obligations; liability that cannot be limited by law.</p>
+
+                <h2>ARTICLE 8: INDEMNIFICATION</h2>
+                <h3>8.1 By Licensor</h3>
+                <p>Licensor indemnifies Licensee against third-party IP infringement claims for Software as provided, with prompt notice, sole control, and cooperation.</p>
+
+                <h3>8.2 By Licensee</h3>
+                <p>Licensee indemnifies Licensor against claims from: Agreement violations; law violations; processing without consent; data subject claims.</p>
+
+                <h2>ARTICLE 9: TERM AND TERMINATION</h2>
+                <p><strong>Term:</strong> Commences on Effective Date, continues per Order Form. <strong>Termination for Breach:</strong> 30 days written notice to cure. <strong>Termination for Convenience:</strong> 30 days notice, no refund.</p>
+                <p><strong>Effect:</strong> Licenses terminate; cease use; destroy copies; return Confidential Information; pay outstanding fees. <strong>Survival:</strong> Articles 1, 4, 5, 6.2, 7, 8, 9, 10, 11 survive.</p>
+
+                <h2>ARTICLE 10: EXPORT COMPLIANCE</h2>
+                <p>Software subject to export controls. Licensee shall not export to prohibited countries/entities without licenses. Licensee represents: not in sanctioned country; not on restricted lists; will not use for prohibited purposes.</p>
+
+                <h2>ARTICLE 11: GENERAL PROVISIONS</h2>
+                <h3>11.1 Governing Law</h3>
+                <p>Romanian law governs. UN Convention on International Sale of Goods does not apply.</p>
+
+                <h3>11.2 Dispute Resolution</h3>
+                <p>Negotiation (30 days) → ICC Mediation → ICC Arbitration in Bucharest, Romania, in English.</p>
+
+                <h3>11.3 Entire Agreement</h3>
+                <p>This Agreement, Order Forms, and DPA constitute entire agreement, superseding prior communications.</p>
+
+                <h3>11.4 Amendment</h3>
+                <p>Amendments require written signature. Licensor may update by posting; continued use constitutes acceptance.</p>
+
+                <h3>11.5 Severability</h3>
+                <p>Invalid provisions shall be modified to minimum extent; remaining provisions remain effective.</p>
+
+                <h3>11.6 Assignment</h3>
+                <p>Licensee may not assign without consent. Licensor may assign to Affiliates or successors.</p>
+
+                <h3>11.7 Force Majeure</h3>
+                <p>Neither party liable for delays from causes beyond reasonable control.</p>
+
+                <h3>11.8 Notices</h3>
+                <p>Written notices to addresses in Order Form. Email permitted for operational notices.</p>
+
+                <h3>11.9 No Third-Party Beneficiaries</h3>
+                <p>No third-party rights created except for indemnified parties.</p>
+
+                <h3>11.10 Regulatory Compliance Design</h3>
+                <p>The Software has been designed and architected to facilitate Licensee compliance with: GDPR (EU) 2016/679, EU AI Act (EU) 2024/1689, BIPA (740 ILCS 14), and CCPA (Cal. Civ. Code § 1798). Licensee remains solely responsible for ensuring their specific use case complies with all applicable laws and regulations in their jurisdiction.</p>
+
+                <div class="legal-meta" style="margin-top: 3rem;">
+                    <p><strong>BY USING THE SOFTWARE, LICENSEE ACKNOWLEDGES HAVING READ, UNDERSTOOD, AND AGREED TO BE BOUND BY THIS AGREEMENT.</strong></p>
+                    <p>Dalexor SRL | Bucharest, Romania | European Union</p>
+                    <p>Contact: legal@dalexor.com | Version 1.0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Dalexor SRL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

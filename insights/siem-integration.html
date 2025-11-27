@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEM Integration: Unifying Physical and Cyber Security | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .article-hero { padding: 10rem 0 4rem; background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); }
+        .article-hero .container { max-width: 800px; }
+        .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 0; }
+        .article-body h2 { font-size: 1.75rem; margin: 3rem 0 1rem; color: var(--color-purple-300); }
+        .article-body h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .article-body ul { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-body li { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-secondary); }
+        .code-block { background: #0a0a1a; border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; overflow-x: auto; font-family: 'Consolas', monospace; font-size: 0.85rem; color: #e5e7eb; }
+        .info-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .info-box h4 { color: var(--color-purple-300); margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="../platform.html" class="nav-link">Platform</a></li>
+                <li><a href="../insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-hero">
+            <div class="container">
+                <span class="section-label">Integration</span>
+                <h1 class="page-title">SIEM Integration: Unifying Physical and Cyber Security</h1>
+                <div class="article-meta" style="margin-top: 1.5rem; color: var(--color-text-secondary);">
+                    <span>DALEXOR Engineering</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>9 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="article-body">
+                    <p class="lead" style="font-size: 1.25rem; color: var(--color-text-primary);">
+                        Physical security and cybersecurity have traditionally operated in silos. SIEM integration bridges this gap, enabling security operations centers to correlate physical events with digital threats for comprehensive situational awareness.
+                    </p>
+
+                    <h2>Why Integrate Physical Security with SIEM?</h2>
+                    <p>
+                        Security Information and Event Management (SIEM) systems aggregate logs from across your IT infrastructure. Adding physical security events creates powerful correlation opportunities:
+                    </p>
+                    <ul>
+                        <li><strong>Insider threat detection:</strong> Employee badges into server room + unusual data access = investigation</li>
+                        <li><strong>Social engineering:</strong> Unknown person in office + phishing emails sent = coordinated attack</li>
+                        <li><strong>Compliance:</strong> Unified audit trail for physical and logical access</li>
+                        <li><strong>Incident response:</strong> Physical context for cyber events</li>
+                    </ul>
+
+                    <h2>Integration Architecture</h2>
+                    <p>
+                        DALEXOR exports events in standard formats compatible with major SIEM platforms:
+                    </p>
+
+                    <h3>Syslog Format</h3>
+                    <div class="code-block">
+&lt;134&gt;1 2024-11-25T14:32:15Z dante-ai security - - - 
+{"event":"person_detected","camera":"lobby-01",
+"person_type":"unknown","threat_level":75,
+"description":"Unknown person entered lobby, 
+carrying large bag, looking around suspiciously"}
+                    </div>
+
+                    <h3>JSON/Webhook Format</h3>
+                    <div class="code-block">
+{
+  "timestamp": "2024-11-25T14:32:15Z",
+  "source": "dante-ai",
+  "event_type": "security_alert",
+  "severity": "high",
+  "camera_id": "lobby-01",
+  "location": "Main Lobby",
+  "person": {
+    "type": "unknown",
+    "description": "Male, dark jacket, carrying backpack"
+  },
+  "threat_level": 75,
+  "analysis": "Unknown person exhibiting suspicious behavior"
+}
+                    </div>
+
+                    <h2>Supported SIEM Platforms</h2>
+                    <ul>
+                        <li><strong>Splunk:</strong> HTTP Event Collector (HEC) integration</li>
+                        <li><strong>Microsoft Sentinel:</strong> Log Analytics workspace ingestion</li>
+                        <li><strong>IBM QRadar:</strong> Syslog and REST API</li>
+                        <li><strong>Elastic SIEM:</strong> Elasticsearch direct indexing</li>
+                        <li><strong>Any SIEM:</strong> Standard syslog (RFC 5424)</li>
+                    </ul>
+
+                    <h2>Correlation Use Cases</h2>
+
+                    <h3>1. After-Hours Access Monitoring</h3>
+                    <p>
+                        Correlate physical presence with system access:
+                    </p>
+                    <ul>
+                        <li>Person detected in office at 2 AM</li>
+                        <li>VPN login from "home" at same time</li>
+                        <li>Alert: Possible credential sharing or compromise</li>
+                    </ul>
+
+                    <h3>2. Tailgating Detection</h3>
+                    <p>
+                        Combine badge data with video analytics:
+                    </p>
+                    <ul>
+                        <li>One badge swipe detected</li>
+                        <li>Two people entered (video analysis)</li>
+                        <li>Alert: Tailgating incident</li>
+                    </ul>
+
+                    <h3>3. Data Exfiltration</h3>
+                    <p>
+                        Physical + digital correlation:
+                    </p>
+                    <ul>
+                        <li>Large file download detected</li>
+                        <li>Person seen carrying storage devices</li>
+                        <li>Person leaving building shortly after</li>
+                        <li>Alert: Potential data exfiltration</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <h4>Enterprise Feature</h4>
+                        <p style="margin-bottom: 0;">
+                            SIEM integration is available in DALEXOR Commercial and Enterprise plans. It includes configurable event filtering, custom field mapping, and dedicated support for integration setup.
+                        </p>
+                    </div>
+
+                    <h2>Implementation Best Practices</h2>
+                    <ul>
+                        <li><strong>Start with high-value events:</strong> Don't flood SIEM with every detection</li>
+                        <li><strong>Normalize data:</strong> Map DALEXOR fields to your SIEM's schema</li>
+                        <li><strong>Create correlation rules:</strong> Define what physical + cyber combinations matter</li>
+                        <li><strong>Test thoroughly:</strong> Ensure events flow correctly before going live</li>
+                        <li><strong>Monitor volume:</strong> Adjust filtering to manage event volume</li>
+                    </ul>
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        Integrating physical security with SIEM transforms both systems. Your SOC gains physical context for cyber events, while physical security benefits from the correlation and automation capabilities of modern SIEM platforms. The result is truly unified security operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

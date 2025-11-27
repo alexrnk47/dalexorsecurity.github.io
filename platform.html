@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform | DALEXOR - Intelligent Surveillance Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="url(#logoGradient)" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="url(#logoGradient)"/><path d="M20 2 L20 10 M20 30 L20 38 M2 20 L10 20 M30 20 L38 20" stroke="url(#logoGradient)" stroke-width="2"/><defs><linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#6d28d9"/></linearGradient></defs></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="platform.html" class="nav-link active">Platform</a></li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="insights.html" class="nav-link">Insights</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions"><a href="contact.html" class="btn btn-primary">Request Demo</a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label animate-fade-in">Platform</span>
+            <h1 class="page-title animate-fade-in-up">Advanced AI Architecture</h1>
+            <p class="page-subtitle animate-fade-in-up delay-1">
+                A comprehensive security platform built on cutting-edge computer vision 
+                and machine learning technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Feature 1: Computer Vision -->
+    <section class="section">
+        <div class="container">
+            <div class="feature-section animate-on-scroll">
+                <div class="feature-image">
+                    <canvas id="cv-canvas" style="width:100%;height:100%;"></canvas>
+                </div>
+                <div class="feature-content">
+                    <h3>Real-Time Computer Vision</h3>
+                    <p>
+                        Our DETR-based detection engine processes video streams at 30 FPS, 
+                        identifying persons, vehicles, animals, and objects with industry-leading 
+                        accuracy. Multi-object tracking maintains identity across frames.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>99.7% detection accuracy across 80+ object classes</span>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Sub-50ms latency from capture to detection</span>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Unlimited simultaneous person tracking</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: Face Recognition -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="feature-section reverse animate-on-scroll">
+                <div class="feature-image">
+                    <canvas id="face-canvas" style="width:100%;height:100%;"></canvas>
+                </div>
+                <div class="feature-content">
+                    <h3>Privacy-Compliant Face Recognition</h3>
+                    <p>
+                        Biometric verification for enrolled personnel only. Our system never 
+                        stores face data for unknown individuals, ensuring full compliance with 
+                        GDPR, BIPA, and the EU AI Act.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Multi-angle recognition with 46+ sample enrollment</span>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Cross-camera identity persistence without re-scanning</span>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Zero biometric storage for unknown persons</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3: VLM Analysis -->
+    <section class="section">
+        <div class="container">
+            <div class="feature-section animate-on-scroll">
+                <div class="feature-image">
+                    <canvas id="vlm-canvas" style="width:100%;height:100%;"></canvas>
+                </div>
+                <div class="feature-content">
+                    <h3>Vision Language Model Analysis</h3>
+                    <p>
+                        Advanced AI understands scene context and generates natural language 
+                        descriptions. Mode-specific prompts optimize threat detection for 
+                        home, away, night, and guest scenarios.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Context-aware behavioral analysis</span>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Natural language search: "person in red jacket"</span>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            <span>Automated incident report generation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Diagram -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Architecture</span>
+                <h2 class="section-title">System Components</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card animate-on-scroll">
+                    <h4>Camera Manager</h4>
+                    <p>Multi-stream ingestion supporting RTSP, USB, and IP cameras with automatic reconnection and health monitoring.</p>
+                </div>
+                <div class="tech-card animate-on-scroll">
+                    <h4>AI Processor</h4>
+                    <p>GPU-accelerated inference engine with optimized ONNX models for real-time object detection and tracking.</p>
+                </div>
+                <div class="tech-card animate-on-scroll">
+                    <h4>Person Tracker</h4>
+                    <p>Multi-modal re-identification using appearance, gait, and temporal features for seamless cross-camera tracking.</p>
+                </div>
+                <div class="tech-card animate-on-scroll">
+                    <h4>Visit Tracker</h4>
+                    <p>Comprehensive visit logging with entry/exit timestamps, duration tracking, and video clip association.</p>
+                </div>
+                <div class="tech-card animate-on-scroll">
+                    <h4>Alert System</h4>
+                    <p>Instant notifications via Telegram, email, and webhooks with configurable threat thresholds per security mode.</p>
+                </div>
+                <div class="tech-card animate-on-scroll">
+                    <h4>Case Manager</h4>
+                    <p>Detective-style case files with searchable VLM analysis, recordings, and cross-referenced incident data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-cta">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title">See the Platform in Action</h2>
+                <p class="cta-description">Schedule a technical demonstration with our engineering team.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Request Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+                <div class="footer-certifications">
+                    <span class="cert-badge">GDPR Compliant</span>
+                    <span class="cert-badge">SOC 2 Type II</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+

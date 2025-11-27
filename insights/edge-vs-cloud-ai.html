@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge vs Cloud: Optimizing AI Inference for Real-Time Security | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .article-hero { padding: 10rem 0 4rem; background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); }
+        .article-hero .container { max-width: 800px; }
+        .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 0; }
+        .article-body h2 { font-size: 1.75rem; margin: 3rem 0 1rem; color: var(--color-purple-300); }
+        .article-body h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .article-body ul { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-body li { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-secondary); }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        .comparison-table th, .comparison-table td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(139, 92, 246, 0.1); }
+        .comparison-table th { color: var(--color-purple-300); font-weight: 600; }
+        .info-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .info-box h4 { color: var(--color-purple-300); margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="../platform.html" class="nav-link">Platform</a></li>
+                <li><a href="../insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-hero">
+            <div class="container">
+                <span class="section-label">Architecture</span>
+                <h1 class="page-title">Edge vs Cloud: Optimizing AI Inference for Real-Time Security</h1>
+                <div class="article-meta" style="margin-top: 1.5rem; color: var(--color-text-secondary);">
+                    <span>DALEXOR Engineering</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>10 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="article-body">
+                    <p class="lead" style="font-size: 1.25rem; color: var(--color-text-primary);">
+                        Where should AI inference happen—on local hardware or in the cloud? For security applications, this architectural decision impacts latency, privacy, cost, and reliability. Here's how to make the right choice.
+                    </p>
+
+                    <h2>The Trade-offs</h2>
+                    
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Factor</th>
+                                <th>Edge (Local)</th>
+                                <th>Cloud</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Latency</strong></td><td>~50ms (instant)</td><td>200-500ms (network delay)</td></tr>
+                            <tr><td><strong>Privacy</strong></td><td>Data never leaves premises</td><td>Data sent to third party</td></tr>
+                            <tr><td><strong>Reliability</strong></td><td>Works offline</td><td>Requires internet</td></tr>
+                            <tr><td><strong>Cost</strong></td><td>One-time hardware</td><td>Ongoing subscription</td></tr>
+                            <tr><td><strong>Scalability</strong></td><td>Limited by local GPU</td><td>Virtually unlimited</td></tr>
+                            <tr><td><strong>Updates</strong></td><td>Manual updates</td><td>Always latest models</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Why Edge Wins for Security</h2>
+
+                    <h3>1. Latency Matters</h3>
+                    <p>
+                        In security, milliseconds count. A cloud round-trip adds 200-500ms of latency—an eternity when detecting an intruder. Edge processing delivers results in under 50ms, enabling real-time response.
+                    </p>
+
+                    <h3>2. Privacy by Architecture</h3>
+                    <p>
+                        When video never leaves your premises, there's no cloud provider to trust, no data breach risk, and no regulatory concerns about cross-border data transfers. Edge processing makes privacy violations architecturally impossible.
+                    </p>
+
+                    <h3>3. Reliability</h3>
+                    <p>
+                        Internet outages happen. When they do, cloud-dependent security systems become blind. Edge systems continue operating normally—exactly when you need them most.
+                    </p>
+
+                    <h3>4. Cost Efficiency</h3>
+                    <p>
+                        Cloud AI inference is expensive at scale. Processing 8 cameras 24/7 in the cloud costs hundreds per month. A one-time GPU investment pays for itself quickly.
+                    </p>
+
+                    <h2>The Hybrid Approach</h2>
+                    <p>
+                        The best architecture combines edge and cloud strengths:
+                    </p>
+                    <ul>
+                        <li><strong>Edge:</strong> Real-time detection, face recognition, immediate alerts</li>
+                        <li><strong>Cloud (optional):</strong> License validation, software updates, remote access</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <h4>DALEXOR Architecture</h4>
+                        <p style="margin-bottom: 0;">
+                            DALEXOR runs 100% locally for all AI processing. The only cloud communication is optional license validation (every 7 days) and update checks. Your video, biometric data, and analysis results never leave your hardware.
+                        </p>
+                    </div>
+
+                    <h2>Hardware Requirements</h2>
+                    <p>
+                        Modern edge AI doesn't require expensive hardware. A mid-range NVIDIA GPU (RTX 3060 or better) can process 8+ camera streams at 30 FPS with full AI analysis. For CPU-only systems, optimized models can still achieve 10-15 FPS.
+                    </p>
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        For security applications, edge processing is the clear winner. It delivers the low latency, privacy, and reliability that security demands. Cloud has its place for non-critical functions, but the core AI should always run locally.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

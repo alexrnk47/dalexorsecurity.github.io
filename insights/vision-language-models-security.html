@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Language Models in Security: Beyond Object Detection | DALEXOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        .article-hero { padding: 10rem 0 4rem; background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%); }
+        .article-hero .container { max-width: 800px; }
+        .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 0; }
+        .article-body h2 { font-size: 1.75rem; margin: 3rem 0 1rem; color: var(--color-purple-300); }
+        .article-body h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.5rem; line-height: 1.8; color: var(--color-text-secondary); }
+        .article-body ul, .article-body ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-body li { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-secondary); }
+        .code-block { background: #0a0a1a; border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; overflow-x: auto; font-family: 'Consolas', monospace; font-size: 0.9rem; color: #e5e7eb; }
+        .info-box { background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; }
+        .info-box h4 { color: var(--color-purple-300); margin-bottom: 0.75rem; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        .comparison-table th, .comparison-table td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(139, 92, 246, 0.1); }
+        .comparison-table th { color: var(--color-purple-300); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#8b5cf6" stroke-width="2"/><circle cx="20" cy="20" r="8" fill="#8b5cf6"/></svg></div>
+                <span class="logo-text">DALEXOR</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="../platform.html" class="nav-link">Platform</a></li>
+                <li><a href="../insights.html" class="nav-link active">Insights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article>
+        <header class="article-hero">
+            <div class="container">
+                <span class="section-label">Technology</span>
+                <h1 class="page-title">Vision Language Models in Security: Beyond Object Detection</h1>
+                <div class="article-meta" style="margin-top: 1.5rem; color: var(--color-text-secondary);">
+                    <span>DALEXOR Engineering</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>8 min read</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="article-body">
+                    <p class="lead" style="font-size: 1.25rem; color: var(--color-text-primary);">
+                        Traditional surveillance AI tells you "there's a person." Vision Language Models tell you "there's a person in dark clothing searching through drawers at 3 AM when the house should be empty." This contextual understanding is revolutionizing security.
+                    </p>
+
+                    <h2>The Evolution of Surveillance AI</h2>
+                    
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Generation</th>
+                                <th>Technology</th>
+                                <th>Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Gen 1</td><td>Motion Detection</td><td>"Something moved"</td></tr>
+                            <tr><td>Gen 2</td><td>Object Detection (YOLO)</td><td>"Person detected"</td></tr>
+                            <tr><td>Gen 3</td><td>Action Recognition</td><td>"Person is running"</td></tr>
+                            <tr><td>Gen 4</td><td>Vision Language Models</td><td>"Unknown person searching drawers suspiciously"</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h2>What Are Vision Language Models?</h2>
+                    <p>
+                        VLMs combine computer vision with large language models to understand images contextually and describe them in natural language. Unlike classifiers with fixed categories, VLMs can:
+                    </p>
+                    <ul>
+                        <li>Describe scenes with unlimited vocabulary</li>
+                        <li>Answer questions about what's happening</li>
+                        <li>Understand relationships and context</li>
+                        <li>Reason about whether behavior is normal or suspicious</li>
+                    </ul>
+
+                    <h2>Practical Security Applications</h2>
+
+                    <h3>1. Contextual Threat Assessment</h3>
+                    <div class="code-block">
+Traditional: "Person detected" → ALERT
+
+VLM Analysis: "Adult male in business attire entering 
+through front door at 6:15 PM. Carrying briefcase 
+and groceries. Behavior consistent with resident 
+returning from work. Threat Level: LOW (5/100)"
+                    </div>
+
+                    <h3>2. Mode-Specific Analysis</h3>
+                    <p>VLMs adjust analysis based on security context:</p>
+                    <ul>
+                        <li><strong>Home Mode:</strong> Focus on weapons, safety. Known person doing normal activities = safe</li>
+                        <li><strong>Away Mode:</strong> ANY person = potential intruder. Maximum alert</li>
+                        <li><strong>Night Mode:</strong> Why is someone awake? Pajamas = OK, dressed = suspicious</li>
+                        <li><strong>Guest Mode:</strong> Monitor valuables. Normal sitting = OK, searching drawers = alert</li>
+                    </ul>
+
+                    <h3>3. Natural Language Search</h3>
+                    <p>Instead of browsing hours of footage, simply ask:</p>
+                    <ul>
+                        <li>"Show me everyone who entered wearing a red jacket"</li>
+                        <li>"When was someone last in the kitchen?"</li>
+                        <li>"Find all instances of someone carrying a package"</li>
+                    </ul>
+
+                    <h2>How DALEXOR Implements VLMs</h2>
+                    <p>
+                        Our system runs VLM analysis on detected persons, generating rich descriptions that are stored and searchable. The analysis considers:
+                    </p>
+                    <ul>
+                        <li>Physical appearance (clothing, accessories)</li>
+                        <li>Current action and body language</li>
+                        <li>Location within the property</li>
+                        <li>Time of day and security mode</li>
+                        <li>Whether the person is known or unknown</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <h4>Privacy Note</h4>
+                        <p style="margin-bottom: 0;">
+                            VLM analysis is only performed and stored for enrolled (known) persons who have given consent. For unknown persons, only anonymized event logs are retained—no detailed descriptions or biometric data.
+                        </p>
+                    </div>
+
+                    <h2>The Future of Intelligent Surveillance</h2>
+                    <p>
+                        VLMs represent a fundamental shift from "detection" to "understanding." As these models improve, security systems will become true intelligent assistants—understanding context, learning patterns, and providing actionable insights rather than just alerts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 DALEXOR Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
