@@ -2,6 +2,7 @@
 /**
  * DALEXOR - Build Script
  * Injects Vercel environment variables into env-config.js
+ * Copies files to public/ directory for Vercel deployment
  * Run this during Vercel build: node build.js
  */
 
@@ -32,17 +33,63 @@ window.__ENV__ = {
 };
 `;
 
-// Ensure js/ directory exists
-const jsDir = path.join(__dirname, 'js');
-if (!fs.existsSync(jsDir)) {
-    fs.mkdirSync(jsDir, { recursive: true });
-    console.log('📁 Created js/ directory');
+// Create public directory
+const publicDir = path.join(__dirname, 'public');
+if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir, { recursive: true });
+    console.log('📁 Created public/ directory');
 }
 
-// Write to js/env-config.js
-const outputPath = path.join(jsDir, 'env-config.js');
-fs.writeFileSync(outputPath, envConfigContent);
+// Ensure js/ directory exists in public
+const jsDir = path.join(publicDir, 'js');
+if (!fs.existsSync(jsDir)) {
+    fs.mkdirSync(jsDir, { recursive: true });
+    console.log('📁 Created public/js/ directory');
+}
 
+// Write env config to public/js/env-config.js
+const envConfigPath = path.join(jsDir, 'env-config.js');
+fs.writeFileSync(envConfigPath, envConfigContent);
 console.log('✅ Environment config generated successfully!');
 console.log(`   SUPABASE_URL: ${SUPABASE_URL}`);
 console.log(`   SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY.substring(0, 20)}...`);
+
+// Copy static files to public directory (if they exist in root)
+const filesToCopy = ['index.html', 'style.css', 'script.js'];
+filesToCopy.forEach(file => {
+    const src = path.join(__dirname, file);
+    const dest = path.join(publicDir, file);
+    if (fs.existsSync(src)) {
+        fs.copyFileSync(src, dest);
+        console.log(`📄 Copied ${file} to public/`);
+    }
+});
+
+// Copy entire directories if they exist
+const dirsToCopy = ['css', 'js', 'images', 'assets'];
+dirsToCopy.forEach(dir => {
+    const src = path.join(__dirname, dir);
+    const dest = path.join(publicDir, dir);
+    if (fs.existsSync(src) && fs.statSync(src).isDirectory()) {
+        copyDir(src, dest);
+        console.log(`📁 Copied ${dir}/ to public/`);
+    }
+});
+
+function copyDir(src, dest) {
+    if (!fs.existsSync(dest)) {
+        fs.mkdirSync(dest, { recursive: true });
+    }
+    const files = fs.readdirSync(src);
+    files.forEach(file => {
+        const srcFile = path.join(src, file);
+        const destFile = path.join(dest, file);
+        if (fs.statSync(srcFile).isDirectory()) {
+            copyDir(srcFile, destFile);
+        } else {
+            fs.copyFileSync(srcFile, destFile);
+        }
+    });
+}
+
+console.log('✅ Build completed! Public directory is ready for deployment.');

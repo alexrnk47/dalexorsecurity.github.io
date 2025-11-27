@@ -1,0 +1,20 @@
+{
+  "buildCommand": "node build.js",
+  "outputDirectory": "public"
+}
+```
+
+**3. Make sure your `build.js` script actually creates the `public` folder** and puts your built files in it.
+
+**4. Test locally** by running:
+```
+npm run build
+```
+
+Then check if a `public` folder appeared in your project directory.
+
+**If the folder was created, commit and push:**
+```
+git add .
+git commit -m "Fix build output directory"
+git push -u origin master
